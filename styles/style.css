@@ -2,4 +2,121 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+    background-image: var(--bg-image);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: var(--main-gap);
+}
+
+
+.header {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  justify-items: end;
+  align-items: center;  
+  position: relative;
+  padding-block-end: 56px;
+}
+
+.header__rec {
+  position: absolute;
+  color: var(--pink);
+  text-align: center;
+  font-family: var(--font), sans-serif;
+  font-size: 18px;
+  line-height: 25px; /* 138.889% */
+  top: 0;
+  right: 28px;
+  display: flex;
+  align-items: center;
+  gap: var(--main-gap);
+}
+
+.header__rec::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: var(--pink);
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 4px var(--pink));
+  top: 8px;
+}
+
+.header__theme-menu-list {
+  margin-block-start: 66.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-inline-end: 3px;
+}
+
+.header__theme-menu-button {
+  color: var(--pink);
+  text-align: center;
+  font-family: var(--font), sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%; 
+  text-transform: lowercase;
+  background-color: initial;
+  border: none;
+  padding-inline: 13px;
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+}
+
+.header__title {
+  color: #DB00FF;
+  text-shadow: 4px 4px 0px var(--pink);
+  font-family: var(--font), sans-serif;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 82.5%; /* 95.7px */
+  margin-block-start: 65px;
+  margin-block-end: 55px;
+}
+
+.header__text {
+  color: #000028;
+  font-family: var(--font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+}
+
+.title-decor {
+  background-color: var(--pink);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--pink);
+}
+
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-end: 1px solid var(--pink);
+  border-block-start: 1px solid var(--pink);
+  inset-inline-end: var(--main-gap);
+  inset-block-start: var(--main-gap);
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: 1px solid var(--pink);
+  border-block-end: 1px solid var(--pink);
+  inset-inline-start: var(--main-gap);
+  inset-block-end: var(--main-gap);
+}
+
+.footer {
+  position: relative;
 }
