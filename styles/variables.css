@@ -5,6 +5,10 @@
 :root {
   --bg-image: url(/images/cover-image-dark.png);
   --font: "IBM Plex Mono";
-  --pink: #FF0070;
+  --accent-color: #FF0070;
   --main-gap: 10px;
+  --bg-color: #000028;
+  --main-text-size: 18px;
+  --main-text-color: #F1B2CE;
+  --title-color: #DB00FF;
 }
