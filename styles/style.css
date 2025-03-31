@@ -10,6 +10,7 @@
 
 
 .header {
+  min-height: 668px;
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -51,7 +52,7 @@
 }
 
 .header__theme-menu-button {
-  color: var(--accent-color);
+  color: var(--header-decoration);
   display: block;
   text-align: center;
   font-family: var(--font), sans-serif;
@@ -64,11 +65,24 @@
   padding-inline: 13px;
   cursor: pointer;
   padding-block-start: 1.5px;
-  padding-block-end: 6px;
+  padding-block-end: 4px;
+  border: 1px solid transparent;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  outline: 1px solid var(--header-decoration);
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.40);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--header-decoration);
 }
 
 .header__title {
@@ -90,7 +104,7 @@
 
 .title-decor {
   background-color: var(--accent-color);
-  color: var(--bg-color);
+  color: var(--title-text-color);
   font-family: var(--font);
   font-size: 18px;
 }
@@ -100,8 +114,8 @@
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--header-decoration);
+  border-block-start: 1px solid var(--header-decoration);
   inset-inline-end: var(--main-gap);
   inset-block-start: var(--main-gap);
 }
@@ -111,8 +125,8 @@
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--header-decoration);
+  border-block-end: 1px solid var(--header-decoration);
   inset-inline-start: var(--main-gap);
   inset-block-end: var(--main-gap);
 }
@@ -168,6 +182,18 @@
   text-shadow: 1px 1px 0 var(--accent-color);
 }
 
+.accent__word:focus {
+  outline: none;
+}
+
+.accent__word:focus-visible {
+  outline: 1px solid var(--main-text-color);
+}
+
+.accent__word:hover {
+  border-bottom: 1px solid var(--main-text-color);
+}
+
 .title_advice {
 font-weight: 400;
 }
@@ -184,6 +210,7 @@ font-weight: 400;
 }
 
 .footer {
+  min-block-size: 668px;
   height: 100vh;
   padding: var(--main);
   position: relative;
