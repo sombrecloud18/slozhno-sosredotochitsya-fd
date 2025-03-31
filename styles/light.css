@@ -12,7 +12,7 @@
   --bg-image: url(/images/cover-image-light.png);
   --accent-color: #FF8DCB;
   --bg-color: #FFF1F7;
-  --main-text-color: #353430;;
+  --main-text-color: #353430;
   --title-color: #FFC2E6;
   --title-text-color: #353430;
   --header-decoration: #353430;
@@ -40,7 +40,7 @@
     --bg-image: url(/images/cover-image-light.png);
     --accent-color: #FF8DCB;
     --bg-color: #FFF1F7;
-    --main-text-color: #353430;;
+    --main-text-color: #353430;
     --title-color: #FFC2E6;
     --title-text-color: #353430;
     --header-decoration: #353430;
