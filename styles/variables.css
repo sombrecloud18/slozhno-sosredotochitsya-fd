@@ -13,4 +13,6 @@
   --main-text-color: #F1B2CE;
   --title-color: #DB00FF;
   --header-decoration: #FF0070;
+  --section-heading: #FF0070;
+  --border-color-hover: rgba(255, 0, 112, 0.40);
 }

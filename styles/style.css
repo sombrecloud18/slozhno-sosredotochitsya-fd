@@ -78,7 +78,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid rgba(255, 0, 112, 0.40);
+  outline: 1px solid var(--border-color-hover);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -137,7 +137,7 @@
 }
 
 .section__title {
-  color: var(--accent-color);
+  color: var(  --section-heading);
   font-size: var(--main-text-size);
   font-weight: 700;
   line-height: 23.4px;
